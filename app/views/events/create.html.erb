@@ -1,0 +1,33 @@
+<% if @event != nil %>
+  <div class="alert alert-warning">
+    <ul>
+      <% @event.errors.full_messages.each do |e| %>
+        <li><%= e %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+<h3>Event Create</h3>
+<%=  form_with(url: events_new_path, method: :post, local: true) do |form| %>
+    <table>
+    <tr>
+        <td>Event Date</td>
+        <td class="tbox1"><%= form.date_field :date, value: params[:date]||Date.today %>
+        <%= form.time_field :time, value: params[:time]|| "12:00" %></td>
+    </tr>
+    <tr>
+        <td>Event Title</td>
+        <td class="tbox1"><%= form.text_field :event_name, class: "tbox_input", value: params[:event_name] %></td>
+    </tr>
+    <tr>
+        <td>The Description</td>
+        <td class="tbox1"><%= form.text_area :description, class: "tbox_input", value: params[:description] %></td>
+    </tr>
+    <tr>
+        <td>The Location</td>
+        <td class="tbox1"><%= form.text_area :location, class: "tbox_input", value: params[:location] %></td>
+    </tr>
+    </table>
+    <input type="submit" value="Submit">
+<% end %>
+    

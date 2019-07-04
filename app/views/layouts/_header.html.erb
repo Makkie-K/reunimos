@@ -1,0 +1,22 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <%= link_to "Reunimos", root_path %>
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+      <% if user_signed_in? %>
+        <li><%= current_user.name %>
+        <% if can? :index, current_user %>
+          <li><%= link_to "Admission Page", users_index_path %></li>
+        <% end %>
+        <% if can? :create, current_user %>
+          <li><%= link_to "Event Create", events_create_path %></li>
+        <% end %>
+        <li><%= link_to "Log out", logout_path %></li>
+      <% else %>
+        <li><%= link_to "Log in", login_path %></li>
+        <li><%= link_to "Sign up", signup_path %></li>
+      <% end %> 
+      </ul>
+    </nav>
+  </div>
+</header>

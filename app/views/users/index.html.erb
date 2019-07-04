@@ -1,0 +1,34 @@
+<h2>Admission Page</h2>
+<%= flash[:danger] %>
+
+
+<table>
+    <tr>
+        <th>User name</th><th>E-Mail</th><th>Permission</th>
+    </tr>
+    
+        
+    <% @users.each do |user| %>     
+        <tr>
+            <td><%= user[:name] %></td>
+            <td><%= user[:email] %></td>
+            <td >
+            <%= form_with url:users_update_path, method: :post, local: true do |form| %>
+            <select name="permission" >
+            <option value="admin" <%= "selected" if user[:permission] == "admin" %>>admin</option>
+            <option value="creator" <%= "selected" if user[:permission] == "creator" %>>creator</option>
+            <option value="user" <%= "selected" if user[:permission] == "user" %>>user</option>
+            </select>
+            <input type="hidden" name="name" value="<%= user[:name] %>">
+            <input type="hidden" name="email" value="<%= user[:email] %>">
+            <input type="submit" value="submit">
+            <% end %>
+            </td>
+            
+        </tr>
+        <% end %>  
+    
+</table>
+
+
+

@@ -1,0 +1,18 @@
+<div >
+    <ul>
+        <% @events.each do |e| %>
+            <%= form_with url:root_path, method: :post, local: true do |form| %> 
+                <li>
+                    <div class="waku">
+                        <div><%= e[:event_date].strftime("%A/ %d/ %m/ %Y %H:%M") %></div>
+                        <div><%= link_to e.event_name, events_show_path(e.id) %></div>
+                        <%= form.hidden_field :event_id, value: e.id %>
+                        <% if current_user != nil && rsvpCheck(e[:id]) == true %>
+                            <%= "RSVP Sumitted" %>
+                        <% end %>
+                    </div>
+                </li>
+            <% end %> 
+        <% end %>
+    </ul>
+</div>

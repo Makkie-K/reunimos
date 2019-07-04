@@ -1,0 +1,18 @@
+// Place all the styles related to the events controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+ul {
+    list-style: none;
+}
+
+#map {
+    width: 300px;
+    height: 300px;
+}
+
+waku4 {
+    width: 400px;
+}

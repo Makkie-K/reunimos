@@ -1,0 +1,67 @@
+<h3>Event Description Page</h3><br>
+<%= flash[:success] %>
+<div class="waku2">
+    <p><%= @event[:event_date].strftime("%A/ %d/ %m/ %Y %H:%M") %></p><br>
+    <p><%= @event[:event_name] %></p>
+    <p>Creator:<%= @creator.name %></p>
+    <% if current_user != nil %>
+        <%= form_with(url: rsvp_create_path, method: :post, local: true) do |form| %>
+        <%= form.hidden_field :event_id, value: @event[:id] %>
+            <%  if current_user != @creator %>
+                <% if rsvpCheck(@event[:id]) == true %>
+                    <%= form.submit value: "RSVP Submitted", disabled: true %>
+                <% else %>
+                    <%= form.submit value: "RSVP" %>
+                <% end %>
+            <% end %>
+        <% end %>
+    <% else %>
+        <%= form_with(url: login_path, method: :get, local: true) do |form| %>
+            <%= form.submit value: "log in" %>
+        <% end %>
+    <% end %>
+
+    <% if can? :update, @event %>
+    <div class="event_show_edit"  >
+        <%= form_with(url: event_edit_path, method: :post, local: true) do |form| %>
+        <%= form.submit value: "Edit" %>
+        <% end %>
+        <%= form_with(url: event_delete_path, method: :post, local: true) do |form| %>
+        <%= form.submit value: "Delete", data: { confirm: "Are you sure to delete it?"} %>
+        <% end %>
+    </div>
+    <% end %>
+
+
+    
+    
+    
+    
+</div>
+<div class="waku4">
+    <div class="waku">
+    <p>Event Description</p><br>
+    <p><%= @event[:description] %></p>
+    </div>
+    <div class="waku">
+        <p>Joined Members</p>
+        <ul>
+            <% @members=getRsvpMembers(@event.id) %>
+            <% @members.each do |m| %>
+                <li><%= m.name %></li>
+            <% end %>
+        </ul>
+    </div>
+   
+    
+    </div>
+    <div class="waku waku4">
+        <div id="display1"></div>
+        <div id="display2"></div>
+        <div id="map"></div>
+       <div class="hr"></div>
+       <div><%= @event[:location] %></div>
+    </div>
+</div>
+
+<%= javascript_include_tag 'event.js' %>
