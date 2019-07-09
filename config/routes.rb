@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   post 'events/delete/:id', to: 'events#delete', as: 'event_delete'
   post 'events/edit/:id', to: 'events#edit', as: 'event_edit'
   put 'events/edit/:id', to: 'events#update', as: 'event_update'
+  get '/contact', to: 'contact#new', as: 'contact_new'
+  post '/contact', to: 'contact#create'
   devise_for :users, :controllers => {
     :registrations => 'users/registrations',
     :sessions => 'users/sessions'   
