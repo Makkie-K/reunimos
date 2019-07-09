@@ -1,2 +1,7 @@
 2019-07-08 16:06:59.879 JST [20795] FATAL:  lock file "postmaster.pid" already exists
 2019-07-08 16:06:59.879 JST [20795] HINT:  Is another postmaster (PID 991) running in data directory "/usr/local/var/postgres"?
+2019-07-09 15:18:12.342 JST [3401] LOG:  listening on IPv6 address "::1", port 5432
+2019-07-09 15:18:12.343 JST [3401] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2019-07-09 15:18:12.345 JST [3401] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2019-07-09 15:18:12.408 JST [3402] LOG:  database system was shut down at 2019-07-08 22:13:41 JST
+2019-07-09 15:18:12.430 JST [3401] LOG:  database system is ready to accept connections
