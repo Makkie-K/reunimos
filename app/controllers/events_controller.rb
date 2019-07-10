@@ -33,7 +33,7 @@ class EventsController < ApplicationController
     if current_user.id != Event.find(params[:event_id]).creator_id
       rsvp = Rsvp.new(event_id: params[:event_id], user_id: current_user.id)
       rsvp.save
-      UserMailer.with(user: current_user, event_id: params[:event_id]).rsvp_email.deliver_later
+      UserMailer.with(user: current_user, event_id: params[:event_id]).rsvp_email.deliver_now
       redirect_to(events_show_path(params[:event_id]))
     end
   end

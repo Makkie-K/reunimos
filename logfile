@@ -5,3 +5,12 @@
 2019-07-09 15:18:12.345 JST [3401] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
 2019-07-09 15:18:12.408 JST [3402] LOG:  database system was shut down at 2019-07-08 22:13:41 JST
 2019-07-09 15:18:12.430 JST [3401] LOG:  database system is ready to accept connections
+2019-07-09 23:03:14.166 JST [3401] LOG:  received smart shutdown request
+2019-07-09 23:03:14.173 JST [3401] LOG:  background worker "logical replication launcher" (PID 3408) exited with exit code 1
+2019-07-09 23:03:14.173 JST [3403] LOG:  shutting down
+2019-07-09 23:03:14.195 JST [3401] LOG:  database system is shut down
+2019-07-10 12:07:38.181 JST [1072] LOG:  listening on IPv6 address "::1", port 5432
+2019-07-10 12:07:38.183 JST [1072] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2019-07-10 12:07:38.184 JST [1072] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2019-07-10 12:07:38.240 JST [1073] LOG:  database system was shut down at 2019-07-09 23:03:14 JST
+2019-07-10 12:07:38.256 JST [1072] LOG:  database system is ready to accept connections

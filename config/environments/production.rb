@@ -74,10 +74,12 @@ Rails.application.configure do
     address:              'smtp.gmail.com',
     port:                 587,
     domain:               'example.com',
-    user_name:            'appdevelopment6619@gmail.com',
-    password:             'development2306',
+    user_name:            ENV['EMAIL_ADDRESS'],
+    password:             ENV['EMAIL_PASSWORD'],
     authentication:       'plain',
     enable_starttls_auto: true }
+
+  
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
