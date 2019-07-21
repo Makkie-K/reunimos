@@ -32,3 +32,27 @@
 2019-07-15 16:50:05.435 JST [1271] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
 2019-07-15 16:50:05.505 JST [1272] LOG:  database system was shut down at 2019-07-14 23:29:28 JST
 2019-07-15 16:50:05.520 JST [1271] LOG:  database system is ready to accept connections
+2019-07-15 23:09:27.464 JST [1271] LOG:  received smart shutdown request
+2019-07-15 23:09:27.467 JST [1271] LOG:  background worker "logical replication launcher" (PID 1278) exited with exit code 1
+2019-07-15 23:09:27.468 JST [1273] LOG:  shutting down
+2019-07-15 23:09:27.483 JST [1271] LOG:  database system is shut down
+2019-07-16 17:44:55.642 JST [1241] LOG:  listening on IPv6 address "::1", port 5432
+2019-07-16 17:44:55.643 JST [1241] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2019-07-16 17:44:55.644 JST [1241] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2019-07-16 17:44:55.716 JST [1242] LOG:  database system was shut down at 2019-07-15 23:09:27 JST
+2019-07-16 17:44:55.735 JST [1241] LOG:  database system is ready to accept connections
+2019-07-17 10:26:43.463 JST [5599] FATAL:  lock file "postmaster.pid" already exists
+2019-07-17 10:26:43.463 JST [5599] HINT:  Is another postmaster (PID 1241) running in data directory "/usr/local/var/postgres"?
+2019-07-17 22:54:52.514 JST [1241] LOG:  received smart shutdown request
+2019-07-17 22:54:52.518 JST [1241] LOG:  background worker "logical replication launcher" (PID 1248) exited with exit code 1
+2019-07-17 22:54:52.518 JST [1243] LOG:  shutting down
+2019-07-17 22:54:52.533 JST [1241] LOG:  database system is shut down
+2019-07-19 13:38:55.378 JST [1065] LOG:  listening on IPv6 address "::1", port 5432
+2019-07-19 13:38:55.379 JST [1065] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2019-07-19 13:38:55.380 JST [1065] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2019-07-19 13:38:55.425 JST [1066] LOG:  database system was shut down at 2019-07-17 22:54:52 JST
+2019-07-19 13:38:55.436 JST [1065] LOG:  database system is ready to accept connections
+2019-07-20 19:54:10.673 JST [1065] LOG:  received smart shutdown request
+2019-07-20 19:54:10.677 JST [1065] LOG:  background worker "logical replication launcher" (PID 1072) exited with exit code 1
+2019-07-20 19:54:10.678 JST [1067] LOG:  shutting down
+2019-07-20 19:54:10.713 JST [1065] LOG:  database system is shut down
