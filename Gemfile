@@ -13,6 +13,7 @@ gem 'geocoder'
 gem 'sqlite3'
 #postgres
 gem 'pg'
+gem 'therubyracer', platforms: :ruby
 gem 'unicorn'
 # Use Puma as the app server
 #gem 'puma', '~> 3.11'
