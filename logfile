@@ -56,3 +56,8 @@
 2019-07-20 19:54:10.677 JST [1065] LOG:  background worker "logical replication launcher" (PID 1072) exited with exit code 1
 2019-07-20 19:54:10.678 JST [1067] LOG:  shutting down
 2019-07-20 19:54:10.713 JST [1065] LOG:  database system is shut down
+2019-07-25 18:19:07.758 JST [3799] LOG:  listening on IPv6 address "::1", port 5432
+2019-07-25 18:19:07.759 JST [3799] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2019-07-25 18:19:07.760 JST [3799] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2019-07-25 18:19:07.812 JST [3800] LOG:  database system was shut down at 2019-07-20 19:54:10 JST
+2019-07-25 18:19:07.839 JST [3799] LOG:  database system is ready to accept connections
