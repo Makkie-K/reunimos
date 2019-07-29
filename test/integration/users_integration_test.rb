@@ -18,7 +18,7 @@ class UsersIntegrationTest < ActionDispatch::IntegrationTest
     assert_select "header", /Admission Page/
     assert_select "header", /Event Create/
     assert_select "header", /Log out/
-    assert_select "header a", 4
+    assert_select "header a", 5
     assert_select "h2", /Admission Page/
 
     # Creator
@@ -33,7 +33,7 @@ class UsersIntegrationTest < ActionDispatch::IntegrationTest
     get root_url
     assert_select "header", /Event Create/
     assert_select "header", /Log out/
-    assert_select "header a", 3 
+    assert_select "header a", 4 
     # get  users_index_url
     # assert_response :success
     # assert_select "h3", /Administration Page/
@@ -49,7 +49,7 @@ class UsersIntegrationTest < ActionDispatch::IntegrationTest
     assert_redirected_to root_url
     get root_url
     assert_select "header", /Log out/
-    assert_select "header a", 2
+    assert_select "header a", 3
   end
 
   test "05 test for signup logout login" do
@@ -125,7 +125,7 @@ class UsersIntegrationTest < ActionDispatch::IntegrationTest
     }}
     get root_url
     assert_select "header", /Log out/
-    assert_select "header a", 4
+    assert_select "header a", 5
     assert_select "header", /Admission Page/
     assert_select "header", /Event Create/
   end
