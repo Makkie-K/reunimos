@@ -61,3 +61,22 @@
 2019-07-25 18:19:07.760 JST [3799] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
 2019-07-25 18:19:07.812 JST [3800] LOG:  database system was shut down at 2019-07-20 19:54:10 JST
 2019-07-25 18:19:07.839 JST [3799] LOG:  database system is ready to accept connections
+2019-07-25 21:41:18.629 JST [3799] LOG:  received smart shutdown request
+2019-07-25 21:41:18.631 JST [3799] LOG:  background worker "logical replication launcher" (PID 3806) exited with exit code 1
+2019-07-25 21:41:18.631 JST [3801] LOG:  shutting down
+2019-07-25 21:41:18.641 JST [3799] LOG:  database system is shut down
+2019-07-29 16:16:08.032 JST [4803] LOG:  listening on IPv6 address "::1", port 5432
+2019-07-29 16:16:08.033 JST [4803] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2019-07-29 16:16:08.034 JST [4803] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2019-07-29 16:16:08.083 JST [4804] LOG:  database system was shut down at 2019-07-25 21:41:18 JST
+2019-07-29 16:16:08.094 JST [4803] LOG:  database system is ready to accept connections
+2019-07-29 23:15:56.610 JST [4803] LOG:  received smart shutdown request
+2019-07-29 23:15:56.613 JST [4803] LOG:  background worker "logical replication launcher" (PID 4810) exited with exit code 1
+2019-07-29 23:15:56.613 JST [4805] LOG:  shutting down
+2019-07-29 23:15:56.623 JST [4803] LOG:  database system is shut down
+2019-07-30 15:54:08.301 JST [1357] LOG:  listening on IPv6 address "::1", port 5432
+2019-07-30 15:54:08.302 JST [1357] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2019-07-30 15:54:08.304 JST [1357] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2019-07-30 15:54:08.353 JST [1358] LOG:  database system was shut down at 2019-07-29 23:15:56 JST
+2019-07-30 15:54:08.370 JST [1357] LOG:  database system is ready to accept connections
+2019-07-30 15:55:30.225 JST [1452] FATAL:  database "reunimos_production" does not exist

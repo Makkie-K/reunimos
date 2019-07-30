@@ -1,6 +1,6 @@
 development:
-#  host: 'localhost'
-  host: 'reunimosredis.rqzes9.0001.apse2.cache.amazonaws.com'
+  host: 'localhost'
+  #host: 'reunimosredis.rqzes9.0001.apse2.cache.amazonaws.com'
   port: '6379'
 test:
   host: 'localhost'
