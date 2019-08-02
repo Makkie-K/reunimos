@@ -1,3 +1,6 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
 .waku {
     border: solid 1px gray;
     margin: 10px;
@@ -65,4 +68,12 @@ body {
 }
 nav ul li {
     color: white;
+}
+
+.people_image img {
+    /*width: 640px;
+    height: 358.5px;
+    margin: 0 auto;*/
+    width: 100%;
+
 }
