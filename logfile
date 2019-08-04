@@ -89,3 +89,7 @@
 2019-08-01 18:22:10.056 JST [1786] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
 2019-08-01 18:22:10.110 JST [1787] LOG:  database system was shut down at 2019-07-31 21:13:19 JST
 2019-08-01 18:22:10.131 JST [1786] LOG:  database system is ready to accept connections
+2019-08-03 23:21:48.896 JST [1786] LOG:  received smart shutdown request
+2019-08-03 23:21:48.906 JST [1786] LOG:  background worker "logical replication launcher" (PID 1793) exited with exit code 1
+2019-08-03 23:21:48.906 JST [1788] LOG:  shutting down
+2019-08-03 23:21:48.932 JST [1786] LOG:  database system is shut down
