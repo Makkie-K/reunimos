@@ -98,3 +98,12 @@
 2019-08-04 15:43:15.451 JST [1685] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
 2019-08-04 15:43:15.525 JST [1686] LOG:  database system was shut down at 2019-08-03 23:21:48 JST
 2019-08-04 15:43:15.538 JST [1685] LOG:  database system is ready to accept connections
+2019-08-05 15:35:41.765 JST [1174] LOG:  listening on IPv6 address "::1", port 5432
+2019-08-05 15:35:41.767 JST [1174] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2019-08-05 15:35:41.768 JST [1174] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2019-08-05 15:35:41.820 JST [1175] LOG:  database system was interrupted; last known up at 2019-08-04 15:48:16 JST
+2019-08-05 15:35:42.083 JST [1175] LOG:  database system was not properly shut down; automatic recovery in progress
+2019-08-05 15:35:42.096 JST [1175] LOG:  redo starts at 0/17EFF10
+2019-08-05 15:35:42.096 JST [1175] LOG:  invalid record length at 0/17EFFF0: wanted 24, got 0
+2019-08-05 15:35:42.096 JST [1175] LOG:  redo done at 0/17EFFB8
+2019-08-05 15:35:42.114 JST [1174] LOG:  database system is ready to accept connections
