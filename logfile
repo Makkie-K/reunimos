@@ -107,3 +107,7 @@
 2019-08-05 15:35:42.096 JST [1175] LOG:  invalid record length at 0/17EFFF0: wanted 24, got 0
 2019-08-05 15:35:42.096 JST [1175] LOG:  redo done at 0/17EFFB8
 2019-08-05 15:35:42.114 JST [1174] LOG:  database system is ready to accept connections
+2019-08-05 22:11:46.733 JST [1174] LOG:  received smart shutdown request
+2019-08-05 22:11:46.738 JST [1174] LOG:  background worker "logical replication launcher" (PID 1181) exited with exit code 1
+2019-08-05 22:11:46.738 JST [1176] LOG:  shutting down
+2019-08-05 22:11:46.749 JST [1174] LOG:  database system is shut down
