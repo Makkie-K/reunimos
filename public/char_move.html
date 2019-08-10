@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url('./img/pattern_shibafu.png');
+        }
+        #star{
+            position: absolute;
+            width: 200px; 
+            hight: 160px;
+        }
+        .rev{
+            transform: scale(-1,1);
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <script>
+        //猫の座標位置
+        var x=100;
+        var y=100;
+        //猫の移動速度
+        var step=100;
+
+        function moveStar(left, top){
+            $('#star').css('left', left + 'px');
+            $('#star').css('top', top + 'px');
+        }
+
+        function up(){
+            if(y>step){
+                y = y - step;
+            }
+            moveStar(x,y);
+        }
+
+        function down(){
+            if(y<innerHeight-100){
+                y = y + step;
+            }
+            moveStar(x,y);
+        }
+
+        function right(){
+            if(x<innerWidth-100){
+                x = x + step;
+            }
+            $('#star').removeClass('rev');
+            moveStar(x,y);
+        }
+
+        function left(){
+            if(x>step){
+                x = x - step;
+            }
+            $('#star').addClass('rev');
+            moveStar(x,y);
+        }
+
+        $(function(){
+            //初期位置(100, 100)
+            moveStar(x,y);
+            $('#up').click(up);
+            $('#down').click(down);
+            $('#right').click(right);
+            $('#left').click(left);
+
+            $('body').keydown(function(e){
+                if (e.keyCode==37){
+                    left();
+                }
+                if (e.keyCode==38){
+                    up();
+                }
+                if (e.keyCode==39){
+                    right();
+                }
+                if (e.keyCode==40){
+                    down();
+                }
+            });
+        });
+    </script>
+    <table>
+        <tr>
+            <td></td><td><input id='up' type='button' value="↑"></td><td></td>
+        </tr>
+        <tr>
+            <td><input id='left' type='button' value="←"></td><td></td><td><input id='right' type='button' value="→"></td>
+        </tr>
+        <tr>
+            <td></td><td><input id='down' type='button' value="↓"></td><td></td>
+        </tr>
+    </table>
+    <img id='star' src='./img/run_cat_smile.png'>
+    <div id='display'></div>
+</body>
+</html>

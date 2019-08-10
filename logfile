@@ -127,3 +127,7 @@
 2019-08-07 14:16:47.564 JST [1497] LOG:  database system is ready to accept connections
 2019-08-08 13:16:12.983 JST [3744] FATAL:  lock file "postmaster.pid" already exists
 2019-08-08 13:16:12.983 JST [3744] HINT:  Is another postmaster (PID 1497) running in data directory "/usr/local/var/postgres"?
+2019-08-08 22:41:55.367 JST [1497] LOG:  received smart shutdown request
+2019-08-08 22:41:55.370 JST [1497] LOG:  background worker "logical replication launcher" (PID 1504) exited with exit code 1
+2019-08-08 22:41:55.370 JST [1499] LOG:  shutting down
+2019-08-08 22:41:55.381 JST [1497] LOG:  database system is shut down
